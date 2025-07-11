@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Http\Controllers\Api;
+
+
+use App\Http\Resources\API\ShowAudio as ShowAudioResource;
+use App\Models\Audio;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
+
+class AudiosController extends Controller
+{
+  
+      public function showaudio()
+        {
+
+             $audio = Audio::where('school_id',Auth::user()->school_id)->get();
+             $audio = ShowAudioResource::collection($audio);
+             return $audio;
+             
+
+        }
+   
+}
