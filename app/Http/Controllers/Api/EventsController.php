@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * SPDX-License-Identifier: MIT
+ * (c) 2025 GegoSoft Technologies and GegoK12 Contributors
+ */
 namespace App\Http\Controllers\Api;
 
 use App\Http\Resources\API\ShowEvent as ShowEventResource;

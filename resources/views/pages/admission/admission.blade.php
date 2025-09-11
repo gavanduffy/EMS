@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 @extends('layouts.admission')
 @section('content')
     <div class="w-full lg:mx-2">

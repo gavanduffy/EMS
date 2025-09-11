@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 <div class="w-full my-3 lg:mx-8 md:mx-8 px-3 lg:px-0 md:px-0">
 	<h1 class="my-3">SeoDetail Settings</h1>
 	<form method="POST" action="" enctype="multipart/form-data">

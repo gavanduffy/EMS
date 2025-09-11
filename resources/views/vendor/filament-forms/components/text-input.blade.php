@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 @php
     $datalistOptions = $getDatalistOptions();
     $extraAlpineAttributes = $getExtraAlpineAttributes();

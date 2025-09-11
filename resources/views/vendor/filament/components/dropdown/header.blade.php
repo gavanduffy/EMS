@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 @php
     use Filament\Support\Enums\IconSize;
 @endphp

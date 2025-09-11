@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 @component('mail::message')
 
 Hi {{ $username }},

@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 <div class="container lg:mx-auto lg:my-32 my-2 p-4">
   <h2 class="font-plex font-extrabold text-black text-2xl lg:text-4xl md:text-4xl  text-center my-4">Better Communication makes a Best School</h2>
   <div class="w-full lg:w-2/3 md:w-2/3 mx-auto text-center font-primary leading-relaxed mb-4">

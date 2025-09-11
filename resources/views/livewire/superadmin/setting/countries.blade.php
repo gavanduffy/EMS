@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 <div>
 	@if (session()->has('message'))
 	    <div class="alert alert-success">

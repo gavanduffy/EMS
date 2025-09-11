@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 @props([
     'error' => false,
     'isDisabled' => false,

@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 <div class="bg-gray-200 border-t border-gray-300">
 <div class="container mx-auto py-8 flex flex-col">
     <h3 class="text-gray-600 text-center mb-3 font-extrabold ">Explore GegoK12 by usecases served</h3>

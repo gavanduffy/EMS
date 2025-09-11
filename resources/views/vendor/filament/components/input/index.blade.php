@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 @props([
     'inlinePrefix' => false,
     'inlineSuffix' => false,

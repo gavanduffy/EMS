@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
   <svg  x="0px" y="0px"
 	 viewBox="0 0 20.012 20.012" style="enable-background:new 0 0 20.012 20.012;" xml:space="preserve" class="fill-current w-8">
 <g>

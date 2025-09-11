@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 <div class="my-8 py-16 border-t border-t-2">
 	<h2 class="text-center text-2xl lg:text-4xl md:text-4xl">Get ready to upgrade your school.</h2>
 	<div class="my-4 mx-auto text-center">

@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 <x-dynamic-component :component="$getFieldWrapperView()" :field="$field">
     @php
         $offColor = $getOffColor() ?? 'gray';

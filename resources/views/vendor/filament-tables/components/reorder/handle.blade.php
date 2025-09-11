@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 <x-filament::icon-button
     color="gray"
     icon="heroicon-m-bars-2"

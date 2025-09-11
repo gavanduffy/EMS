@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 <div>
 	<div class="d-flex justify-content-between">
  		<div class="font-weight-bold text-muted">

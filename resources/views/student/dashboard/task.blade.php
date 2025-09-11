@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
  <div class="flex flex-col lg:flex-row md:flex-row">
     <div class="w-full xl:w-1/3 md:w-full lg:w-full my-3 lg:my-0 md:my-0 px-1 dashboard-task">
       <div class="bg-white px-3 py-2 my-3">

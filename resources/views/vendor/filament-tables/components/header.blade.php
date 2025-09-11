@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 @php
     use Filament\Support\Enums\Alignment;
     use Filament\Tables\Actions\HeaderActionsPosition;

@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 @if (count($messages))
     <div class="w-full px-4">
         <div class="bg-white shadow leading-loose px-3 py-3 overflow-y-auto">

@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 @extends('layouts.app')
 @section('content')
 <div class="container mx-auto">

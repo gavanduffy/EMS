@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 <div class="w-full h-full lg:w-48 md:w-48 bg-red-800 text-white">
   <div class="min-h-full header-wrapper-b hidden lg:block md:block ">
    @include('layouts.superadmin.menu')

@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
   <div class="container mx-auto homepage pt-8 pb-16 lg:px-32 flex flex-col items-center">
      <div class="image-wrapper mt-2 mb-8">
         <img src="https://gego-static.s3.ap-south-1.amazonaws.com/gegok12/gego_k12_logo.png" class="logo-image h-32" alt="GegoK12 - School Management System " />

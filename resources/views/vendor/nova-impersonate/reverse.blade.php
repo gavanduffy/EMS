@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 <style>
     @media print{
        .noprint{

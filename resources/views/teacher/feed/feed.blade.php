@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 @extends('layouts.teacher.layout')
 @section('content')
 <h1 class="admin-h1 my-3">Feed</h1>

@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 @foreach($tasks as $tasklist)
 <!-- @if($key==1) -->
 <p class="text-gray-800 text-sm font-semibold flex items-center">Today Tasks

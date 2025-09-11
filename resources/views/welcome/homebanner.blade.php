@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 
     {{--<div class="container mx-auto h-full">
         <div class="w-full p-8 flex flex-col lg:flex-row items-center h-full">

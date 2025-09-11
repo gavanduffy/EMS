@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 @extends('layouts.student.layout')
 @section('content')
     <div class="flex items-center justify-between">

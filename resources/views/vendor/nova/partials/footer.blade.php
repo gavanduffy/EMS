@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 <p class="mt-8 text-center text-xs text-80">
     <a href="https://gegok12.com" class="text-primary dim no-underline">GegoK12</a>
     <span class="px-1">&middot;</span>

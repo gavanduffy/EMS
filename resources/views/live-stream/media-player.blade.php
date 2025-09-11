@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 @extends('layouts.admin.full-width-layout')
 
 

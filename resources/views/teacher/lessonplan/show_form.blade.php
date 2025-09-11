@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
    <div class="bg-white shadow overflow-x-auto">
    <table class="w-full">
       <tr class="border-b-2">

@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * SPDX-License-Identifier: MIT
+ * (c) 2025 GegoSoft Technologies and GegoK12 Contributors
+ */
 namespace App\Http\Controllers\Teacher;
 
 use App\Http\Resources\ClassUpcomingExam as ClassUpcomingExamResource;

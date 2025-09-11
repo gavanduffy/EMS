@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 @props([
     'alpineHidden' => null,
     'alpineSelected' => null,

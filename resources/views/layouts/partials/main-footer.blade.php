@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
  <footer class="bg-gray-200 border-t border-gray-300">
 <!-- <div class="container mx-auto py-8 flex flex-wrap px-2 lg:px-0 md:px-0">
     <div class="w-full lg:w-1/4 md:w-full">

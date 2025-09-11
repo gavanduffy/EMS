@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 @php
     $id = $getId();
     $isDisabled = $isDisabled();

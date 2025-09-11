@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 <ul class="list-reset text-sm">
     <li class="py-3 px-3 hover:font-semibold {{ Request::segment ('2') == 'dashboard' ? 'active':'' }}">
         <a href="{{ url('/library/dashboard') }}" class="flex items-center">

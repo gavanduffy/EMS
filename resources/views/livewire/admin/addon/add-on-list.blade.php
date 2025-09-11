@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 <div>
     {{-- Be like water. --}}
 <div class="bg-gray-50">

@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * SPDX-License-Identifier: MIT
+ * (c) 2025 GegoSoft Technologies and GegoK12 Contributors
+ */
 namespace App\Http\Controllers\Accountant;
 
 use App\Http\Resources\Holiday as HolidayResource;

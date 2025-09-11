@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 <form action="" class="bg-white" wire:submit.prevent="create">
 	<div class="p-4 border-bottom">
 		<div class="mb-2 text-muted">

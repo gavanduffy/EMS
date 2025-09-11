@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 <x-filament-tables::cell
     :attributes="
         \Filament\Support\prepare_inherited_attributes($attributes)

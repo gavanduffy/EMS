@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 <div>
     @if($conversations->count())
     	@foreach($conversations as $conversation)

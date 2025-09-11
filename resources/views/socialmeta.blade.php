@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 <meta property="og:title" content="{!!\config::get('settings.sitename')!!}"/>
 <meta property="og:url" content="{{env('APP_URL')}}">
 <meta property="og:image" content="{!!url(\config::get('settings.sitelogo'))!!}"/>

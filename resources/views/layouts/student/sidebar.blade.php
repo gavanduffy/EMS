@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 <div class="w-full lg:w-48 md:w-48  text-white h-full student-sidebar">
   <div class="min-h-full header-wrapper-b hidden lg:block md:block ">
    @include('layouts.student.menu')

@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 <div class="fixed inset-x-0 w-1/4 mx-auto z-40 bottom-0">
 <!-- <div class="fixed w-1/4 mx-auto z-40" style="top: 100px; left: 100px;"> -->
 	<div class=" rounded-lg py-3 ">

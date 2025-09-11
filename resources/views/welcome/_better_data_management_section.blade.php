@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 <div class="container mx-auto my-8 flex flex-col p-3 lg:p-0 md:p-0">
 	<h2 class="text-xl lg:text-4xl text-center font-plex font-extrabold text-black mb-6">
 		Better Data Management Tool for School

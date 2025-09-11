@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 @props([
     'maxHeight' => null,
     'offset' => 8,

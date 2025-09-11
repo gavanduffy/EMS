@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 <div>
   <div class="relative flex flex-col lg:flex-row md:flex-row bg-white shadow border">
     <div class="w-full lg:w-8/12 md:w-8/12 flex flex-col lg:flex-row md:flex-row lg:items-center px-5 py-4">

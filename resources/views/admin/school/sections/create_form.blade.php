@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 <form method="POST" action="{{url('/admin/section/add')}}" enctype="multipart/form-data">
   @csrf
   <div class="flex"> 

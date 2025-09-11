@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 <div>
    	@foreach($messages as $message)
 	   	@if($message->isOwn())

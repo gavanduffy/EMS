@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 <div
     {{
         $attributes->class([

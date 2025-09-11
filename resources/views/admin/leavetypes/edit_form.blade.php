@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 <form method="POST" action="{{url('/admin/leavetype/edit/'.$leavetype->id)}}" enctype="multipart/form-data">
   @csrf
   <div class="flex"> 

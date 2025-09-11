@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 <div class="bg-gray-800 pt-16 pb-48 lg:px-32 px-4">
 	<div class="container mx-auto">
 	<div class="flex flex-col lg:flex-row md:flex-row items-center justify-between">

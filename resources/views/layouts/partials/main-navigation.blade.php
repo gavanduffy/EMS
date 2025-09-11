@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 @unless(request()->is('/'))
     <nav class="navbar sticky bg-white w-full flex  lg:flex-row px-4 lg:px-8 pt-4 mb-0 justify-between items-center shadow">
         <div>

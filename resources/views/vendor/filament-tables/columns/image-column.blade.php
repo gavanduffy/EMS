@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 @php
     $limit = $getLimit();
     $state = \Illuminate\Support\Arr::wrap($getState());

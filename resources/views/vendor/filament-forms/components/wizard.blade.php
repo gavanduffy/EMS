@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 @php
     $isContained = $isContained();
     $statePath = $getStatePath();

@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 <div>
     {{-- In work, do what you enjoy. --}}
 

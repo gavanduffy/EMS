@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 <div class="custom-table overflow-auto">
     <table class="table table-bordered messageTable" id="messagelist">
         <thead class="bg-grey-light">

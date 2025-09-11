@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 <p
     data-validation-error
     {{

@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 <div class="relative">
    <div class="flex flex-row justify-between">
       <table class="w-full">

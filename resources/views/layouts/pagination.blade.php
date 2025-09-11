@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 @if ($paginator->hasPages())
     <ul class="pagination">
         {{-- Previous Page Link --}}

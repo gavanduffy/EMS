@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 @php
     if ((! isset($columnSpan)) || (! is_array($columnSpan))) {
         $columnSpan = [

@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 <div class="d-flex mb-2 justify-content-end">
     <div>
    		<img src="{{ $message->user->present()->avatar }}" alt="{{ $message->user->FullName }}" style="width: 35px;" class="rounded-circle mr-2">

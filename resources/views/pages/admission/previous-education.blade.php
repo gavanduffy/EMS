@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 <fieldset class="shadow">
     <!-- <h2 class="fs-title">Previous Education</h2> -->
    <div>

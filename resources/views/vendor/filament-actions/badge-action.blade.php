@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 <x-filament-actions::action
     :action="$action"
     dynamic-component="filament::badge"

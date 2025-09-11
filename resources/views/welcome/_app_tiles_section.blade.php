@@ -1,3 +1,4 @@
+{{-- SPDX-License-Identifier: MIT --}}
 <div class="features app-section container mx-auto px-2 py-2 bg-white shadow flex justify-around -mt-8 mb-16">
   <div class="my-2">
     <img src="{{asset('uploads/icons/home/admin.svg')}}" class="w-16 h-16 mx-auto">
