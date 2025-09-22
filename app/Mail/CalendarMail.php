@@ -9,7 +9,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use App\Models\Events;
 use App\Models\MailTemplate;
 
-class Calendarmail extends Mailable implements ShouldQueue
+class CalendarMail extends Mailable implements ShouldQueue
 {
     use Queueable, SerializesModels;
 
