@@ -97,8 +97,6 @@ public/uploads/teacher/*
 public/uploads/student/*
 !public/uploads/student/index.html
 
-storage/*
-!storage/medialibrary/index.html
 
 public/uploads/reports/*
 !public/uploads/reports/index.html.vapor/
@@ -106,3 +104,4 @@ public/uploads/reports/*
 .env.staging
 /.vapor
 .vapor/*
+composer.lock
