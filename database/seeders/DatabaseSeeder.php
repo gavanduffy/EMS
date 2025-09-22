@@ -47,7 +47,7 @@ class DatabaseSeeder extends Seeder
        
         $this->call(BooksCategoryTableSeeder::class); //test //
         $this->call(BooksTableSeeder::class); //test //
-        $this->call(TimetableTableSeeder::class); //test //
+
         //$this->call(AssignmentTableSeeder::class); //test
         //$this->call(StudentAssignmentTableSeeder::class); //test
         $this->call(ScholasticGradesTableSeeder::class); //test //
