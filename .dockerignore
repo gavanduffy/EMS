@@ -1,0 +1,17 @@
+.git
+.gitignore
+node_modules
+vendor
+npm-debug.log
+yarn-error.log
+pnpm-lock.yaml
+.env
+.env.*
+!.env.example
+storage/logs/*
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+public/storage
+.idea
+.DS_Store
