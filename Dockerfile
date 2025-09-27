@@ -4,16 +4,31 @@ FROM composer:2 AS vendor
 WORKDIR /var/www/html
 ENV COMPOSER_ALLOW_SUPERUSER=1
 
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends \
-        libjpeg62-turbo-dev \
-        libpng-dev \
-        libfreetype6-dev \
-    && docker-php-ext-configure gd --with-freetype --with-jpeg \
-    && docker-php-ext-install -j"$(nproc)" \
+RUN set -eux; \
+    if command -v apt-get >/dev/null; then \
+        apt-get update; \
+        apt-get install -y --no-install-recommends \
+            libjpeg62-turbo-dev \
+            libpng-dev \
+            libfreetype6-dev; \
+    elif command -v apk >/dev/null; then \
+        apk add --no-cache \
+            libjpeg-turbo-dev \
+            libpng-dev \
+            freetype-dev; \
+    else \
+        echo "Unsupported package manager" >&2; \
+        exit 1; \
+    fi; \
+    docker-php-ext-configure gd --with-freetype --with-jpeg; \
+    docker-php-ext-install -j"$(nproc)" \
         exif \
-        gd \
-    && rm -rf /var/lib/apt/lists/*
+        gd; \
+    if command -v apt-get >/dev/null; then \
+        rm -rf /var/lib/apt/lists/*; \
+    else \
+        rm -rf /var/cache/apk/*; \
+    fi
 
 COPY composer.json composer.lock* ./
 RUN composer install \
