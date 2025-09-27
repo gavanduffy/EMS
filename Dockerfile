@@ -4,6 +4,17 @@ FROM composer:2 AS vendor
 WORKDIR /var/www/html
 ENV COMPOSER_ALLOW_SUPERUSER=1
 
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+        libjpeg62-turbo-dev \
+        libpng-dev \
+        libfreetype6-dev \
+    && docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install -j"$(nproc)" \
+        exif \
+        gd \
+    && rm -rf /var/lib/apt/lists/*
+
 COPY composer.json composer.lock* ./
 RUN composer install \
     --no-dev \
