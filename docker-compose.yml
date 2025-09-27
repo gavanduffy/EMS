@@ -4,7 +4,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "${APP_PORT:-8000}:80"
+      - "${APP_PORT:-8081}:80"
     environment:
       APP_NAME: ${APP_NAME:-Gegok12}
       APP_ENV: ${APP_ENV:-local}
@@ -83,7 +83,7 @@ services:
   mailhog:
     image: mailhog/mailhog:v1.0.1
     ports:
-      - "${MAILHOG_PORT:-8025}:8025"
+      - "${MAILHOG_PORT:-8026}:8025"
 
 volumes:
   mysql_data:
