@@ -10,12 +10,16 @@ RUN set -eux; \
         apt-get install -y --no-install-recommends \
             libjpeg62-turbo-dev \
             libpng-dev \
-            libfreetype6-dev; \
+            libfreetype6-dev \
+            libicu-dev \
+            libsodium-dev; \
     elif command -v apk >/dev/null; then \
         apk add --no-cache \
             libjpeg-turbo-dev \
             libpng-dev \
-            freetype-dev; \
+            freetype-dev \
+            icu-dev \
+            libsodium-dev; \
     else \
         echo "Unsupported package manager" >&2; \
         exit 1; \
@@ -23,7 +27,9 @@ RUN set -eux; \
     docker-php-ext-configure gd --with-freetype --with-jpeg; \
     docker-php-ext-install -j"$(nproc)" \
         exif \
-        gd; \
+        gd \
+        intl \
+        sodium; \
     if command -v apt-get >/dev/null; then \
         rm -rf /var/lib/apt/lists/*; \
     else \
