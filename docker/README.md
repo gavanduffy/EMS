@@ -9,6 +9,7 @@ This directory documents the self-contained Docker setup that builds the Laravel
 - **Redis cache (`redis`)** – Supplies cache, session, and queue backends and persists data in the `redis_data` volume.
 - **Mailhog (`mailhog`)** – Captures outbound mail for local testing with a web UI exposed on port 8025.
 - **Persistent storage** – The `storage_data` volume preserves the Laravel `storage/` directory across container rebuilds.
+- **Compose bundles** – `docker-compose.dependencies.yml` isolates the infrastructure services so they can run independently, while `docker-compose.yml` focuses on the PHP application and extends those shared definitions.
 
 ## Prerequisites
 
@@ -18,9 +19,9 @@ This directory documents the self-contained Docker setup that builds the Laravel
 
 ## Quick start
 
-1. **Copy the environment template** – `cp .env.example .env` and adjust the values that differ from the defaults. Leave `APP_KEY` empty to let the container bootstrap it automatically.
-2. **(Optional) Override Compose variables** – Create or edit the root `.env` file (used both by Laravel and Docker Compose) to set values such as database credentials, host ports, or third-party integrations.
-3. **Build and start** – `docker compose up -d --build`. The first build can take a few minutes while Composer and npm install dependencies.
+1. **(Optional) Provide environment overrides** – Edit the root `.env` file when you need to override database credentials, host ports, or third-party API keys. The container copies `.env.example` automatically when no `.env` is present.
+2. **Start the shared services** – `docker compose -f docker-compose.dependencies.yml up -d` boots MySQL, Redis, and Mailhog on their own. This step is optional because the application compose file extends the same definitions and will start them when needed.
+3. **Build and launch the PHP application** – `docker compose up -d --build app` compiles Composer and npm dependencies without prompting for user input and brings Apache online. The first build can take a few minutes.
 4. **Tail logs** – `docker compose logs -f app` shows the bootstrap sequence (key generation, migrations, cache warming).
 5. **Access the services** – Visit `http://localhost:8000` for the application and `http://localhost:8025` for Mailhog. Use `docker compose down` to stop everything when finished.
 
