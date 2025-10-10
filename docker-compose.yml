@@ -3,6 +3,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    image: ems-app:latest
+    restart: unless-stopped
     ports:
       - "${APP_PORT:-8081}:80"
     environment:
@@ -50,42 +52,30 @@ services:
         condition: service_healthy
       mailhog:
         condition: service_started
+    networks:
+      - backend
+      - mail
 
   db:
-    image: mysql:8.0
-    command: --default-authentication-plugin=mysql_native_password --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
-    environment:
-      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:-rootpassword}
-      MYSQL_DATABASE: ${DB_DATABASE:-gegok12}
-      MYSQL_USER: ${DB_USERNAME:-gegok12}
-      MYSQL_PASSWORD: ${DB_PASSWORD:-gegok12}
-      TZ: ${TIMEZONE:-Asia/Kolkata}
-    volumes:
-      - mysql_data:/var/lib/mysql
-    healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-      start_period: 30s
+    extends:
+      file: docker-compose.dependencies.yml
+      service: db
 
   redis:
-    image: redis:7-alpine
-    command: redis-server --appendonly yes
-    volumes:
-      - redis_data:/data
-    healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
+    extends:
+      file: docker-compose.dependencies.yml
+      service: redis
 
   mailhog:
-    image: mailhog/mailhog:v1.0.1
-    ports:
-      - "${MAILHOG_PORT:-8026}:8025"
+    extends:
+      file: docker-compose.dependencies.yml
+      service: mailhog
 
 volumes:
+  storage_data:
   mysql_data:
   redis_data:
-  storage_data:
+
+networks:
+  backend:
+  mail:
